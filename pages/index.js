@@ -45,8 +45,6 @@ export async function getStaticProps() {
               items {
                 title
                 slug
-                youTubeEmbedUrl
-                description
               }
             }
           }

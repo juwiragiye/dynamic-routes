@@ -18,11 +18,10 @@ export default function MemoryPage({ memory }) {
         <iframe
           width="560"
           height="315"
-          src={memory.youTubeEmbedUrl}
+          src={memory.youtubeEmbedUrl}
           title="YouTube video player"
-          frameborder="0"
           allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-          allowfullscreen
+         
         ></iframe>
         <p>{memory.description}</p>
 
@@ -71,7 +70,7 @@ export async function getStaticProps({ params }) {
     },
   );
   const {data}= await result.json();
-  console.log("DATTTTTTAAAAAQAAA.....", data)
+  
 
   const [memoryData] = data.memoryCollection.items;
 
